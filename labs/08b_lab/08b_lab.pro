@@ -14,12 +14,16 @@ TARGET = 08b_lab
 
 CONFIG += sailfishapp
 
-SOURCES += src/08b_lab.cpp
+SOURCES += src/08b_lab.cpp \
+    src/counter.cpp \
+    src/list_of_strings.cpp
 
 DISTFILES += qml/08b_lab.qml \
     qml/cover/CoverPage.qml \
     qml/pages/FirstPage.qml \
-    qml/pages/SecondPage.qml \
+    qml/pages/task03.qml \
+    qml/pages/task04.qml \
+    qml/pages/task05-06.qml \
     rpm/08b_lab.changes.in \
     rpm/08b_lab.changes.run.in \
     rpm/08b_lab.spec \
@@ -38,3 +42,7 @@ CONFIG += sailfishapp_i18n
 # following TRANSLATIONS line. And also do not forget to
 # modify the localized app name in the the .desktop file.
 TRANSLATIONS += translations/08b_lab-de.ts
+
+HEADERS += \
+    src/counter.h \
+    src/list_of_strings.h
